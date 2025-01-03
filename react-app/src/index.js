@@ -10,21 +10,21 @@ import { createLogger } from 'redux-logger'
 
 const middleware = [thunk];
 const logger = createLogger({
-    // ...options
+  // ...options
 });
 const root = ReactDOM.createRoot(document.getElementById('root'));
 middleware.push(createLogger());
 const store = createStore(
-    applyMiddleware(logger)
+  applyMiddleware(logger)
 );
 
 
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </BrowserRouter>
-    </React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>
 );

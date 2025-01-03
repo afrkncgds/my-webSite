@@ -4,9 +4,9 @@ import RoutesComponent from './components/routesComponent';
 
 function App() {
   return (
-      <div className="App">
-        <RoutesComponent/>
-      </div>
+    <div className="App">
+      <RoutesComponent/>
+    </div>
   );
 }
 
