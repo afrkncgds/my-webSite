@@ -4,17 +4,10 @@ import Footer from "./layout/footer";
 import HomePage from "../pages/homePage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import {
-
     HOME_PAGE,
-  
 } from "../constants/routePaths";
 
-
-
-
-
 function RoutesComponent() {
-    const loc = useLocation();
     return (
         <div>
             {
