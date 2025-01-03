@@ -1,0 +1,93 @@
+.aboutUs{
+  margin: 0 auto 48px;
+  background: $lightBg;
+
+}
+.about__cnt{
+  margin: 40px 0 0;
+
+  .title-item{
+    margin: 0 0 24px;
+    h1{
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+      color: #111827;
+    }
+  }
+  .about-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 48px;
+    margin: 0 0 48px;
+    .mask-block{
+      position: absolute;
+      display: block;
+      left: -48px;
+      bottom: 28px;
+      border-radius: 16px;
+      background: #E1E7FE;
+      height: 288px;
+      width: 108%;
+
+    }
+  }
+
+  .text-container{
+    width: 49.2%;
+    z-index: 1;
+    .text-item{
+      margin:0 0  96px;
+      p{
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+        color:#111827;
+      }
+
+      
+    }
+
+  }
+  .image-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    z-index: 1;
+    margin:0 -20px 0 0;
+    picture{
+      margin: -260px 0 0;
+    }
+    .text-item{
+      width: 49.2%;
+
+      p{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        color:#111827;
+      }
+    }
+  }
+  .content-container{
+    .text-block{
+      margin: 20px 0 0;
+      &:first-child{
+        margin: 0;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #111827;
+      }
+      &.strong{
+        p{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

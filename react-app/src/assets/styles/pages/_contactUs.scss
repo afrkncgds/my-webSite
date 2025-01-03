@@ -1,0 +1,45 @@
+.contactUs{
+  margin: 0 auto;
+  background: $lightBg;
+  .contact-form{
+    .content__block{
+        padding: 48px;
+        margin: 48px 0;
+    }
+    .input-block{
+      width: 484px;
+      max-width: none;
+      &.select{
+        width: 580px;
+      }
+      &.text-area{
+        width: 580px;
+      }
+    }
+  }
+  .contact-form__item{
+    max-width: none;
+  }
+  .safe-area{
+    padding: 0 0 48px;
+  }
+}
+.contact__cnt{
+  margin: 40px 0 0;
+  .title-item{
+    margin: 0 0 24px;
+    h1{
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+      color: #111827;
+    }
+  }
+  p{
+    color: $title;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px; 
+    letter-spacing: -0.56px;
+  }
+}

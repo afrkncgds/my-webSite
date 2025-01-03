@@ -1,0 +1,91 @@
+.btn{
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  span{
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.white-btn{
+  background: #FFFFFF;
+  border: 1px solid #FFC100;
+  padding: 13px 20px;
+  span{
+    color: #482200;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  &:hover{
+    span{
+      color: #BB6A02;
+    }
+  }
+}
+.btn-icon{
+  margin: 0 8px 0 0;
+}
+
+.yellow-btn{
+  background: $yellow;
+  span{
+    color: #482200;
+  }
+  &:hover{
+    background: #FFE01B;
+  }
+}
+
+.purple-btn{
+  background: transparent;
+  border: 1px solid $purple;
+  border-radius: 24px;
+  padding: 6px 12px;
+  span{
+    color: $purple;
+  }
+  &:hover{
+    background: #EEF2FF;
+  }
+}
+
+.light-yellow-btn{
+  border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
+  background:#FFFFEA;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: fit-content;
+  margin: 0 auto;
+  span{
+    color: #482200;
+    white-space: nowrap;
+  }
+}
+
+.green-btn{
+  background: $green;
+  span{
+    color: #FFF;
+  }
+}
+
+.red-btn{
+  background: $red;
+  border: 1px solid $borderRed;
+  span{
+    color: #FFF;
+  }
+}
+
+.forgot-btn{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  p{
+    cursor: pointer;
+  }
+}
