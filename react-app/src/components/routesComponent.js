@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import HomePage from "../pages/homePage";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import {
     HOME_PAGE,
 } from "../constants/routePaths";
