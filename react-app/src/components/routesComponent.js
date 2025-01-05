@@ -9,7 +9,7 @@ import {
 
 function RoutesComponent() {
     return (
-        <div>
+        <div className="main">
             {
                     <>
                         <Header />

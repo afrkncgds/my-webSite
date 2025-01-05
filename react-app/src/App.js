@@ -1,4 +1,4 @@
-import './assets/styles/main.css';
+import './assets/styles/main.scss';
 import React from 'react';
 import RoutesComponent from './components/routesComponent';
 
