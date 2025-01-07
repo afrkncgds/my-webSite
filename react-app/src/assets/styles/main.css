@@ -112,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -426,6 +427,7 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -756,6 +758,7 @@ body {
   align-items: center;
 }
 .slider .slider__container {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -811,6 +814,7 @@ body {
   justify-content: space-between;
 }
 .copy-block__item img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -1108,6 +1112,7 @@ body {
   margin: 32px 0 0;
 }
 .lightbox img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .lightbox h2 {
@@ -1150,7 +1155,8 @@ body {
 .header-root .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header-root .header-wrapper {
   display: flex;
@@ -1171,6 +1177,63 @@ body {
 .footer-root {
   background: linear-gradient(90deg, rgb(0, 32, 36) 0%, rgb(69, 94, 111) 0%, rgb(0, 212, 255) 100%);
   padding: 20px;
+}
+
+.aside-root {
+  width: 160px;
+  padding: 20px 0;
+  background-color: #222222;
+  height: 100vh;
+}
+.aside-root .logo-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.aside-root .logo-item {
+  width: 100px;
+  height: 100px;
+}
+.aside-root .logo-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aside-root .name-block {
+  padding: 20px;
+}
+.aside-root .name-block p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+.aside-root .menu-block {
+  padding: 20px 0 0;
+}
+.aside-root .menu-block ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 47px;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.1882352941);
+  outline: none;
+}
+.aside-root .menu-block ul li a:hover {
+  background: #333333;
+  border-right: 1px solid #0099e5;
+  transition: all 0.2s ease-in-out;
 }
 
 .banner {
@@ -1194,7 +1257,8 @@ body {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -1208,7 +1272,8 @@ body {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1237,6 +1302,39 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
+}
+
+.home-root {
+  display: flex;
+  align-items: flex-start;
+}
+.home-root .home-wrapper {
+  padding: 0 0 0 20px;
+  width: calc(100% - 170px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: black;
+  height: 100%;
+}
+.home-root .home-wrapper .image-wrapper {
+  width: 50%;
+  height: 600px;
+}
+.home-root .home-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-root .home-wrapper .text-wrapper {
+  background: #333333;
+  width: 50%;
+}
+.home-root .home-wrapper .text-wrapper h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .aboutUs {
@@ -1507,7 +1605,8 @@ body {
 .login-container picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .login-form {
@@ -1640,6 +1739,7 @@ body {
 }
 
 .aside-menu {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 20px 16px;
   background: #FFF;
@@ -1869,7 +1969,8 @@ body {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1903,7 +2004,8 @@ body {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1917,7 +2019,8 @@ body {
   .home__planet img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -2082,7 +2185,8 @@ body {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -2383,6 +2487,4 @@ body {
     font-size: 12px;
     line-height: 16px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

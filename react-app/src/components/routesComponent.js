@@ -12,12 +12,12 @@ function RoutesComponent() {
         <div className="main">
             {
                     <div className="main-root">
-                        <Header />
+                        
                         <Routes>
                             <Route exact path={HOME_PAGE} element={<HomePage />} />
 
                         </Routes>
-                        <Footer />
+                        
                     </div>
             }
         </div>

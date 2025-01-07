@@ -1,12 +1,19 @@
 import React from 'react';
+import Aside from '../components/layout/aside';
 
 function HomePage() {
     return (
         <div className="home-root">
-            <h1>Welcome to the Home Page!</h1>
-            <p>
-                This is the main landing page of our application. Feel free to explore and enjoy your stay.
-            </p>
+            <Aside />
+            <div className="home-wrapper">
+                <div className="image-wrapper">
+                    <img src="img/cv-foto.png" alt="profile" />
+                </div>
+                <div className="text-wrapper">
+                    <h1>Ayhan Furkan Çağdaş</h1>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
         </div>
     );
 }
