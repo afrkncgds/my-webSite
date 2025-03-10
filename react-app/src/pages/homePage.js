@@ -7,7 +7,8 @@ function HomePage() {
             <Aside />
             <div className="home-wrapper">
                 <div className='home-container'>
-                <div className="image-wrapper">
+                  <div className='home-top-container'>
+               <div className="image-wrapper">
                     <img src="img/cv-foto.png" alt="profile" />
                 </div>
                 <div className="text-wrapper">
@@ -44,7 +45,17 @@ kadar İngilizce bilgisine sahibim.
                     </div>
                     
                 </div>
+                  </div>
+                  <div className='home-bottom-container'>
+                    <div className='title-block'>
+                        <h3>Neler Yapıyorum</h3>
+                    </div>
+                  </div>
+
+               
+            
                 </div>
+                
             </div>
         </div>
     );

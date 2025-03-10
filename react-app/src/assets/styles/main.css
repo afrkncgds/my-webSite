@@ -112,8 +112,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -427,7 +426,6 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -758,7 +756,6 @@ body {
   align-items: center;
 }
 .slider .slider__container {
-  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -814,7 +811,6 @@ body {
   justify-content: space-between;
 }
 .copy-block__item img {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -1112,7 +1108,6 @@ body {
   margin: 32px 0 0;
 }
 .lightbox img {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .lightbox h2 {
@@ -1155,8 +1150,7 @@ body {
 .header-root .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header-root .header-wrapper {
   display: flex;
@@ -1180,10 +1174,13 @@ body {
 }
 
 .aside-root {
-  width: 160px;
+  width: 170px;
   padding: 20px 0;
   background-color: #222222;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .aside-root .logo-block {
   display: flex;
@@ -1198,8 +1195,7 @@ body {
 .aside-root .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .aside-root .name-block {
   padding: 20px;
@@ -1235,6 +1231,16 @@ body {
   border-right: 1px solid #0099e5;
   transition: all 0.2s ease-in-out;
 }
+.aside-root .social-block ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside-root .copyright-block p {
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
 
 .banner {
   width: 100%;
@@ -1257,8 +1263,7 @@ body {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner__content {
@@ -1272,8 +1277,7 @@ body {
 .banner__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .banner__text {
@@ -1324,17 +1328,43 @@ body {
 .home-root .home-wrapper .image-wrapper img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home-root .home-wrapper .text-wrapper {
   background: #333333;
   width: 50%;
+  height: 100%;
+  padding: 100px 10%;
+  max-height: 600px;
 }
 .home-root .home-wrapper .text-wrapper h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 600;
+}
+.home-root .home-wrapper .text-wrapper p {
+  color: #a5a5a5;
+  font-size: 24px;
+  margin: 30px 0 0;
+}
+.home-root .home-wrapper .text-wrapper .button-block {
+  margin: 30px 0 0;
+  display: flex;
+}
+.home-root .home-wrapper .text-wrapper .button-block .btn-item {
+  padding: 8px 16px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.home-root .home-wrapper .text-wrapper .button-block .btn-item span {
+  color: white;
+  font-size: 18px;
+}
+.home-root .home-wrapper .home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .aboutUs {
@@ -1605,8 +1635,7 @@ body {
 .login-container picture img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .login-form {
@@ -1739,7 +1768,6 @@ body {
 }
 
 .aside-menu {
-  width: -moz-fit-content;
   width: fit-content;
   padding: 20px 16px;
   background: #FFF;
@@ -1969,8 +1997,7 @@ body {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -2004,8 +2031,7 @@ body {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -2019,8 +2045,7 @@ body {
   .home__planet img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -2185,8 +2210,7 @@ body {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -2487,4 +2511,6 @@ body {
     font-size: 12px;
     line-height: 16px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
